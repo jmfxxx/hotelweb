@@ -24,6 +24,8 @@ body {
 
 }
 
+
+
 /**********  
 Utilitys 
 *********/
@@ -33,6 +35,18 @@ Utilitys
 
 .pb-90 {
     padding-bottom: 90px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /**********  
@@ -55,6 +69,61 @@ Layout
 a {
     text-decoration: none;
     color: #535353;
+}
+
+.h2-container {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+    position: relative;
+    display: inline-block;
+}
+
+h2::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #2980b9;
+    position: absolute;
+    bottom: -10px;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 15px 30px;
+    display: inline-block;
+    /* 全大寫 */
+    text-transform: uppercase;
+
+}
+
+.btn-outline {
+    border: 2px solid #2980b9;
+    color: #2980b9;
+    box-shadow: 0 0 3px 0;
+    transition: all 0.5s
+}
+
+.btn-outline:hover {
+    border: 2px solid #7bbff0;
+    color: #7bbff0;
+}
+
+.btn-full {
+    background-color: #2980b9;
+    color: #ffffff;
+}
+
+.btn-full:hover {
+    background-color: #1a4d6f;
+    color: #ffffff;
+    transition: all 0.5s;
+    box-shadow: 0 0 3px 0;
 }
 
 /********* 
@@ -125,5 +194,13 @@ header {
 }
 
 /********* 
-Section
+about
 *********/
+
+.about-text {
+    line-height: 1.8;
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 80%;
+}
