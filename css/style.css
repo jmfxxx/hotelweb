@@ -1,0 +1,69 @@
+/**********
+Reset
+primary-light-0:#7bbff0;
+primary: #2980b9;
+primary-dark-0: #1a4d6f;
+primary-dark-1: #032e4d;
+primary-dark-2: #031e31;
+black: #535353;
+grey: #dedede;
+green-light-0:#55efc4;
+green: #29787c;
+**********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* debug 技巧 */
+    border: 1px solid #ccc;
+}
+
+body {
+    color:#535353
+}
+
+/**********  
+Layout 共用
+*********/
+.row::after{
+    content:"";
+    display: table;
+    clear:both;
+}
+/* .clearfix {
+    clear:both;
+} */
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #535353;
+}
+/********* 
+NAV 選單
+*********/
+.nav-logo {
+ display:block;
+ width: 130px; 
+ float:left;  
+}
+.nav-list {
+    list-style: none;
+    float:right;
+}
+.nav-list li {
+    display:inline-block;
+    margin-right: 16px;
+    /* 這個方式也可以padding */
+    /* padding-top: 20px; */ 
+    margin-top:20px;
+    
+}
+/*把選單羧後面空白拿掉,使用選擇器方式*/ 
+.nav-list li:last-of-type{
+    margin-right: 0;
+} 
+ 
