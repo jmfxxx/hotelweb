@@ -20,33 +20,21 @@ green: #29787c;
 
 body {
     color: #535353;
-    font-family: 'Lato', Helvetica;
-
+    font-family: 'Lato', Helvetica, sans-serif;
 }
 
-/**********  
-Utilitys 
-*********/
-.pt-90 {
-    padding-top: 90px
-}
 
-.pb-90 {
-    padding-bottom: 90px;
-}
 
-/**********  
-Layout 
-*********/
-.row::after {
+/******
+Layout
+*******/
+
+.row:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* .clearfix {
-    clear:both;
-} */
 .container {
     width: 960px;
     margin: 0 auto;
@@ -54,76 +42,70 @@ Layout
 
 a {
     text-decoration: none;
-    color: #535353;
+    color: black;
 }
 
-/********* 
-NAV 選單
-*********/
+/******
+nav Menu
+*******/
 .nav-logo {
-    display: block;
     width: 130px;
+    display: block;
     float: left;
 }
 
 .nav-list {
-    list-style: none;
     float: right;
 }
 
 .nav-list li {
+    list-style: none;
     display: inline-block;
-    margin-right: 16px;
-    /* 這個方式也可以padding */
-    /* padding-top: 20px; */
     margin-top: 20px;
-
+    margin-right: 16px;
 }
 
-/*把選單羧後面空白拿掉,使用選擇器方式*/
 .nav-list li:last-of-type {
     margin-right: 0;
 }
 
-/********* 
-header 
-*********/
+/******
+header
+*******/
 
 header {
     background: url(../img/jumbotron.jpg);
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 750px;
+    padding: 20px;
     position: relative;
-
 }
 
 .header-container {
-    background: rgba(0, 0, 0, .5);
-    color: #ffffff;
-    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
     display: inline-block;
     position: absolute;
+    padding: 20px;
+    margin: 0 0 10px 0;
     top: 75%;
     left: 25%;
     transform: translate(-50%, -50%);
 }
 
 .header-h1 {
-    font-weight: 300;
-    font-size: 42px;
+    color: #fff;
     margin: 0 0 10px 0;
+    font-size: 42px;
+    font-weight: 300;
+
 }
 
-.subtilte {
-    /* margin-bottom: 20px; */
-    color: #dedede;
-    font-style: italic;
+.subtitle {
+    color: #fff;
     margin-top: 10px;
+    font-style: italic;
     text-transform: capitalize;
-}
 
-/********* 
-Section
-*********/
+}
