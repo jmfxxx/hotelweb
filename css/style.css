@@ -15,7 +15,7 @@ green: #29787c;
   padding: 0;
   box-sizing: border-box;
   /* debug 技巧 */
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
 }
 
 body {
