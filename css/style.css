@@ -11,147 +11,142 @@ green-light-0:#55efc4;
 green: #29787c;
 **********/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* debug 技巧 */
-    /* border: 1px solid #ccc; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* debug 技巧 */
+  border: 1px solid #ccc;
 }
 
 body {
-    color: #535353;
-    font-family: 'Lato', Helvetica;
-
+  color: #535353;
+  font-family: "Lato", Helvetica;
 }
-
-
 
 /**********  
 Utilitys 
 *********/
 .pt-90 {
-    padding-top: 90px
+  padding-top: 90px;
 }
 
 .pb-90 {
-    padding-bottom: 90px;
+  padding-bottom: 90px;
 }
 
 .mb-30 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .mt-20 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 /**********  
 Layout 
 *********/
 .row::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* .clearfix {
     clear:both;
 } */
 .container {
-    width: 960px;
-    margin: 0 auto;
+  width: 960px;
+  margin: 0 auto;
 }
 
 a {
-    text-decoration: none;
-    color: #535353;
+  text-decoration: none;
+  color: #535353;
 }
 
 .h2-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
-    font-weight: 700;
-    font-size: 32px;
-    position: relative;
-    display: inline-block;
+  font-weight: 700;
+  font-size: 32px;
+  position: relative;
+  display: inline-block;
 }
 
 h2::before {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 5px;
-    background: #2980b9;
-    position: absolute;
-    bottom: -10px;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: #2980b9;
+  position: absolute;
+  bottom: -10px;
 }
 
 .btn {
-    border-radius: 5px;
-    padding: 15px 30px;
-    display: inline-block;
-    /* 全大寫 */
-    text-transform: uppercase;
-
+  border-radius: 5px;
+  padding: 15px 30px;
+  display: inline-block;
+  /* 全大寫 */
+  text-transform: uppercase;
 }
 
 .btn-outline {
-    border: 2px solid #2980b9;
-    color: #2980b9;
-    box-shadow: 0 0 3px 0;
-    transition: all 0.5s
+  border: 2px solid #2980b9;
+  color: #2980b9;
+  box-shadow: 0 0 3px 0;
+  transition: all 0.5s;
 }
 
 .btn-outline:hover {
-    border: 2px solid #7bbff0;
-    color: #7bbff0;
+  border: 2px solid #7bbff0;
+  color: #7bbff0;
 }
 
 .btn-full {
-    background-color: #2980b9;
-    color: #ffffff;
+  background-color: #2980b9;
+  color: #ffffff;
 }
 
 .btn-full:hover {
-    background-color: #1a4d6f;
-    color: #ffffff;
-    transition: all 0.5s;
-    box-shadow: 0 0 3px 0;
+  background-color: #1a4d6f;
+  color: #ffffff;
+  transition: all 0.5s;
+  box-shadow: 0 0 3px 0;
 }
 
 /********* 
 NAV 選單
 *********/
 .nav-logo {
-    display: block;
-    width: 130px;
-    float: left;
+  display: block;
+  width: 130px;
+  float: left;
 }
 
 .nav-list {
-    list-style: none;
-    float: right;
+  list-style: none;
+  float: right;
 }
 
 .nav-list li {
-    display: inline-block;
-    margin-right: 16px;
-    /* 這個方式也可以padding */
-    /* padding-top: 20px; */
-    margin-top: 20px;
-
+  display: inline-block;
+  margin-right: 16px;
+  /* 這個方式也可以padding */
+  /* padding-top: 20px; */
+  margin-top: 20px;
 }
 
 /*把選單羧後面空白拿掉,使用選擇器方式*/
 .nav-list li:last-of-type {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 /********* 
@@ -159,38 +154,37 @@ header
 *********/
 
 header {
-    background: url(../img/jumbotron.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 750px;
-    position: relative;
-
+  background: url(../img/jumbotron.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+  position: relative;
 }
 
 .header-container {
-    background: rgba(0, 0, 0, .5);
-    color: #ffffff;
-    padding: 20px;
-    display: inline-block;
-    position: absolute;
-    top: 75%;
-    left: 25%;
-    transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 75%;
+  left: 25%;
+  transform: translate(-50%, -50%);
 }
 
 .header-h1 {
-    font-weight: 300;
-    font-size: 42px;
-    margin: 0 0 10px 0;
+  font-weight: 300;
+  font-size: 42px;
+  margin: 0 0 10px 0;
 }
 
 .subtilte {
-    /* margin-bottom: 20px; */
-    color: #dedede;
-    font-style: italic;
-    margin-top: 10px;
-    text-transform: capitalize;
+  /* margin-bottom: 20px; */
+  color: #dedede;
+  font-style: italic;
+  margin-top: 10px;
+  text-transform: capitalize;
 }
 
 /********* 
@@ -198,9 +192,32 @@ about
 *********/
 
 .about-text {
-    line-height: 1.8;
-    margin-right: auto;
-    margin-left: auto;
+  line-height: 1.8;
+  margin-right: auto;
+  margin-left: auto;
 
-    width: 80%;
+  width: 80%;
+}
+
+/********* 
+Rooms
+*********/
+.hotel-rooms {
+  width: 100%;
+}
+.hotel-roomlist {
+  list-style: none;
+  width: 25%;
+  float: left;
+  height: 200px;
+  overflow: hidden;
+}
+.hotel-photo {
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+}
+
+.hotel-photo:hover {
+  transform: scale(1.1);
 }
