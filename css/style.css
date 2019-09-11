@@ -26,16 +26,38 @@ body {
 /**********  
 Utilitys 
 *********/
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
 .pt-90 {
   padding-top: 90px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
 }
 
 .pb-90 {
   padding-bottom: 90px;
 }
 
+
+
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
 }
 
 .mt-20 {
@@ -62,6 +84,33 @@ Layout
   width: 960px;
   margin: 0 auto;
 }
+
+[class^="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+
+[class^="col-"]:not:last-child {
+  margin-right: 30px;
+}
+
+.col-md-4 {
+  width: calc((100% - 2 * 30px)/3);
+}
+
+.col-md-3 {
+  width: calc((100% - 3 * 30px)/4);
+}
+
+.col-md-6 {
+  width: calc((100% - 1 * 30px)/2);
+  /* border: 1px solid red; */
+}
+
+/**********  
+HTML Elements
+*********/
 
 a {
   text-decoration: none;
@@ -120,6 +169,10 @@ h2::before {
   color: #ffffff;
   transition: all 0.5s;
   box-shadow: 0 0 3px 0;
+}
+
+.img-full {
+  width: 100%;
 }
 
 /********* 
@@ -205,6 +258,7 @@ Rooms
 .hotel-rooms {
   width: 100%;
 }
+
 .hotel-roomlist {
   list-style: none;
   width: 25%;
@@ -212,6 +266,7 @@ Rooms
   height: 200px;
   overflow: hidden;
 }
+
 .hotel-photo {
   width: 100%;
   height: 100%;
@@ -220,4 +275,203 @@ Rooms
 
 .hotel-photo:hover {
   transform: scale(1.1);
+}
+
+/********* 
+Testimonials
+*********/
+
+.testimonials-card {
+  padding: 60px 30px 0;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.testimonials-card-text {
+  line-height: 1.8;
+  padding-bottom: 60px;
+  position: relative;
+
+}
+
+.testimonials-card-text::before,
+.testimonials-card-text::after {
+  color: #ccc;
+  font-size: 60px;
+  position: absolute;
+}
+
+.testimonials-card-text::before {
+  content: "\201C";
+  top: -45px;
+  left: -10px;
+}
+
+.testimonials-card-text::after {
+  content: "\201D";
+  bottom: 10px;
+  right: 0;
+}
+
+.testimonials-card-info {
+  background: #29787c;
+  color: #ffffff;
+  margin: 0 -30px;
+  padding: 60px 0 30px;
+  position: relative;
+  right: 0;
+}
+
+.testimonials-card-name {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.testimonials-card-postition {
+  color: #55efc4;
+
+}
+
+.testimonials-card-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 3px solid #7bbff0;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/********* 
+Clients
+*********/
+.clients {
+  background-color: #031e31;
+
+}
+
+.client-block {
+  height: 30px;
+  background-color: #ccc;
+  width: 100%;
+}
+
+/********* 
+Contact Us
+*********/
+
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  /*This is the aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+}
+
+textarea.form-input {
+  height: 150px;
+}
+
+/********* 
+footer 
+*********/
+footer {
+  background-color: #032e4d;
+
+}
+
+.footer-list {
+  list-style: none;
+  color: #FFF;
+
+}
+
+.footer-list li {
+  margin-right: 16px;
+  display: inline-block;
+}
+
+.footer-list li:last-of-type {
+  margin-right: 0;
+
+}
+
+.footer-logo {
+  margin-top: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.copyright {
+  background-color: #031e31;
+  color: #7bbff0;
+  font-weight: 300;
+}
+
+/********* 
+scrolltopbtn 
+*********/
+.scrollTopBtn {
+  position: fixed;
+  display: block;
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  bottom: 30px;
+  background-color: #55efc4;
+  border-radius: 50%;
+
+  /* flex方式垂直置中 */
+
+  /* display: flex;
+  position: flex;
+  justify-content: center;
+  align-items: center; */
+
+  /* text-align: center;
+  vertical-align: middle;
+  display: inline-block; */
+}
+
+.scrollTopBtn i {
+
+  color: #fff;
+  /*讓文字垂直中調整*/
+  position: relative;
+  top: 50%;
+  right: -25%;
+  transform: translateY(-50%);
+
+
 }
