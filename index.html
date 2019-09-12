@@ -14,18 +14,20 @@
 
 <body>
   <!-- Section NAVBar-->
-  <nav>
-    <div class="container">
-      <div class="row">
+  <nav id="nav">
+    <div class="container ">
+      <div class="row nav-container ">
         <img src="./img/logo.png" alt="logo" class="nav-logo" />
         <ul class="nav-list">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Rooms</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Clients</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#About">About Us</a></li>
+          <li><a href="#Rooms">Rooms</a></li>
+          <li><a href="#Testimonials">Testimonials</a></li>
+          <li><a href="#Clients">Clients</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
+        <div class="nav-barmenu"> <i class="fas fa-bars fa-2x"></i></div>
       </div>
+
       <!-- row clearfix用-->
       <!-- <div class="clearfix"></div> -->
     </div>
@@ -40,7 +42,7 @@
     </div>
   </header>
   <!-- Section About Us-->
-  <section class="pb-90 pt-90 ">
+  <section class="pb-90 pt-90 " id="About">
     <div class="container">
       <div class="h2-container">
         <h2 class="mb-30">About Us</h2>
@@ -65,7 +67,7 @@
     </div>
   </section>
   <!-- Section HotelRooms-->
-  <section>
+  <section id="Rooms">
     <div class="row">
       <ul class="hotel-rooms">
         <li class="hotel-roomlist">
@@ -96,7 +98,7 @@
     </div>
   </section>
   <!-- Section testimontals -->
-  <section class="pt-90 pb-90">
+  <section class="pt-90 pb-90" id="Testimonials">
     <div class="container">
       <div class="h2-container">
         <h2 class="mb-30">Testimonials</h2>
@@ -147,7 +149,7 @@
     </div>
   </section>
   <!-- Section Clients -->
-  <section class="pt-60 pb-60 clients">
+  <section class="pt-60 pb-60" id="Clients">
     <div class="container">
       <div class="row">
         <!-- col-md-3 -->
@@ -174,7 +176,7 @@
   </section>
 
   <!-- Section Contacts -->
-  <section class="pt-90 pb-90">
+  <section class="pt-90 pb-90" id="Contact">
     <div class="container">
       <div class="h2-container">
         <h2 class="mb-60">Contact Us</h2>
@@ -221,10 +223,11 @@
     <div class="container">
       <div class="row text-center">
         <ul class="footer-list">
-          <li>About</li>
-          <li>Rooms</li>
-          <li>Testimonials</li>
-          <li>Contact</li>
+          <li><a href="#About">About Us</a></li>
+          <li><a href="#Rooms">Rooms</a></li>
+          <li><a href="#Testimonials">Testimonials</a></li>
+          <li><a href="#Clients">Clients</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
         <img src="./img/footer-logo.png" alt="webhotel" class="footer-logo mt-20">
       </div>
@@ -233,8 +236,12 @@
   <div class="copyright pb-20 pt-20 text-center">
     Copyright &copy; WebHotel Design by Du Du Don
   </div>
+  <a href="#nav" class="scrollTopBtn "><i class="fas fa-angle-up fa-2x"></i></a>
 
-  <a href="#" class="scrollTopBtn "><i class="fas fa-angle-up fa-2x"></i></a>
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
