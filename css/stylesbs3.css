@@ -1,0 +1,59 @@
+.row .clearfix {
+  clear: both;
+}
+a {
+  text-decoration: none;
+}
+
+/*Utility*/
+.pt-30 {
+  padding-top: 60px;
+}
+.pt-60 {
+  padding-top: 60px;
+}
+.pt-90 {
+  padding-top: 90px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.pb-90 {
+  padding-bottom: 90px;
+}
+
+/* nav */
+.logo {
+  height: 60px;
+}
+
+/* header */
+header {
+  background: url("../img/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  position: relative;
+}
+
+.header-item {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  position: absolute;
+  left: 15%;
+  top: 65%;
+}
+
+/*rooms*/
+.room-item {
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+}
