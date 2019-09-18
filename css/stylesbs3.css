@@ -97,6 +97,21 @@ header {
   top: 65%;
 }
 
+.header-h1 {
+  font-weight: 300;
+  font-size: 42px;
+  margin: 0 0 10px 0;
+}
+
+.subtilte {
+  /* margin-bottom: 20px; */
+  color: #dedede;
+  font-style: italic;
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-size: 18px
+}
+
 /*about us */
 .about-text {
   line-height: 1.8;
