@@ -159,7 +159,26 @@ header {
   font-size: 18px;
   line-height: 1.8;
   padding: 60px 20px 60px;
+  position: relative;
+}
 
+.testimonials-card-text::before,
+.testimonials-card-text::after {
+  color: #ccc;
+  font-size: 60px;
+  position: absolute;
+}
+
+.testimonials-card-text::before {
+  content: '\201C';
+  top: 10px;
+  left: 30px;
+}
+
+.testimonials-card-text::after {
+  content: '\201D';
+  bottom: -18px;
+  right: 30px;
 }
 
 .testimonials-card-info {
