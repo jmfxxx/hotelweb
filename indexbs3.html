@@ -1,118 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- 引入 Bootstrap -->
-    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
-    />
 
-    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
-      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet" />
+  <!-- 引入 Bootstrap -->
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
 
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
-      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./css/stylesbs3.css" />
+  <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
 
-    <title>Document</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <img src="./img/logo.png" class="logo" alt="" />
-        </div>
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css' />
+  <link rel="stylesheet" href="./css/stylesbs3.css" />
+  <script src="./js/app-bs3.js"></script>
+  <title>Document</title>
+</head>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-         
+<body id="nav">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <img src="./img/logo.png" class="logo" alt="" />
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Rooms</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Contact</a></li>
-           
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container-fluid -->
-    </nav>
-    <!-- header -->
-    <div class="row"></div>
-    <header col-md-12>
-      <div class="header-item col-md-3  ">
-        <h2 class="text-center">Best Hotel In Vegas</h2>
-        <p><i>Voted Best Hotel 2019 By Travel Advisor</i></p>
-        <p><i>5 Start Rate By BestHotel.Com</i></p>
-      </div>
-    </header>
+            <li><a href="#About">About Us</a></li>
+            <li><a href="#Rooms">Rooms</a></li>
+            <li><a href="#Testimonials">Testimonials</a></li>
+            <li><a href="#Clients">Clients</a></li>
+            <li><a href="#Contact">Contact</a></li>
 
-    <!-- about us -->
-    <section class="pt-90 pb-60" >
-    <div class="about container pb-60 ">
-      <h1 class="text-center pb-30">About Us</h1>
-  <p class="col-md-8 col-md-offset-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed cum facere eos at veritatis sunt qui, corporis alias, non, in provident ducimus temporibus nulla maiores quod eum reiciendis odio atque aspernatur architecto adipisci optio quia facilis. Nobis, commodi dolor mollitia beatae tempore in, provident ipsum quo obcaecati vitae, minima quibusdam.</p>
-<p class="col-md-8 col-md-offset-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo dignissimos tenetur laudantium, quos ducimus quia qui consectetur a? Sequi laboriosam nesciunt sed nemo. Perspiciatis ut doloribus aut sint est! Laboriosam.</p>
-    </div><div class="row"></div>
-<button class="btn btn-primary center-block btn-lg">BOOKNOW</button>
+          </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <!-- header -->
+  <div class="row"></div>
+  <header id="header">
+    <div class="header-item col-md-3  ">
+      <h2 class="text-center">Best Hotel In Vegas</h2>
+      <p><i>Voted Best Hotel 2019 By Travel Advisor</i></p>
+      <p><i>5 Start Rate By BestHotel.Com</i></p>
+    </div>
+  </header>
+
+  <!-- about us -->
+  <section class="pt-90 pb-60 " id="About">
+
+    <div class="about container text-center  col-md-8 col-md-offset-2 pb-60 ">
+      <h2 class="text-center pb-30">About Us</h2>
+      <div class="clearfix"></div>
+
+
+      <p class="about-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed cum
+        facere eos
+        at veritatis sunt qui, corporis alias, non, in provident ducimus temporibus nulla maiores quod eum reiciendis
+        odio atque . Nobis, commodi dolor mollitia beatae tempore in,
+        provident ipsum quo obcaecati vitae, minima quibusdam.</p>
+      <p class="about-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+        dignissimos
+        tenetur consectetur a? Sequi laboriosam nesciunt sed nemo. Perspiciatis ut
+        doloribus aut sint est! Laboriosam.</p>
+    </div>
+    <div class="row"></div>
+    <button class="btn btn-primary center-block btn-lg">BOOKNOW</button>
 
   </section>
 
   <!-- rooms -->
-  <section class="bp-60 ">
-    <div class="div  ">
-     <div class="col-md-3"> <img src="./img/rooms-1.jpg"  class="img-responsive pull-left" alt=""></div>
-     <div class="col-md-3 " style="width:100%"><img src="./img/rooms-2.jpg"  class="img-responsive pull-left" alt=""></div>
-      <div class="col-md-3"> <img src="./img/rooms-3.jpg"  class="img-responsive" alt=""></div>
-        <div class="col-md-3"> <img src="./img/rooms-4.jpg"  class="img-responsive" alt=""></div>
-      <img src="./img/rooms-5.jpg"  class="img-responsive" alt="">
-      <img src="./img/rooms-6.jpg"  class="img-responsive" alt="">
-      <img src="./img/rooms-7.jpg"  class="img-responsive" alt="">
-      <img src="./img/rooms-8.jpg"  class="img-responsive" alt="">
+
+  <section class="pb-90" id="Rooms">
+    <div class="room-type col-md-3 col-sm-6">
+      <img src="./img/rooms-1.jpg" class="room-photo img-responsive" alt="rooms-1">
+    </div>
+    <div class="room-type col-md-3 col-sm-6">
+      <img src="./img/rooms-2.jpg" class="room-photo img-responsive" alt="rooms-2">
+    </div>
+    <div class="room-type col-md-3 col-sm-6">
+      <img src="./img/rooms-3.jpg" class="room-photo img-responsive" alt="rooms-3">
+    </div>
+    <div class="room-type col-md-3 col-sm-6">
+      <img src="./img/rooms-4.jpg" class="room-photo img-responsive" alt="rooms-4">
+    </div>
+    <div class="room-type col-md-3 col-sm-6">
+      <img src="./img/rooms-5.jpg" class="room-photo img-responsive" alt="rooms-5">
+    </div>
+    <div class="room-type col-md-3 col-sm-6">
+      <img src="./img/rooms-6.jpg" class="room-photo img-responsive" alt="rooms-6">
+    </div>
+    <div class="room-type col-md-3 col-sm-6">
+      <img src="./img/rooms-7.jpg" class="room-photo img-responsive" alt="rooms-7">
+    </div>
+    <div class="room-type col-md-3 col-sm-6">
+      <img src="./img/rooms-8.jpg" class="room-photo img-responsive" alt="rooms-8">
+    </div>
+
+  </section>
+  <div class="row"></div>
+  <!-- Testimonials -->
+  <section class="pt-90 pb-90 " id="Testimonials">
+
+    <div class="container text-center">
+      <h2 class="text-center mb-30 ">Testimonials</h2>
+      <div class="clearfix"></div>
+      <div class="col-md-4">
+        <div class="testimonials-card">
+          <div class="testimonials-card-text ">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde fugiat suscipit harum laboriosam voluptatum,
+            architecto rem consequatur atque animi libero? dolor sit amet consectetur adipisicing elit. Unde fugiat
+            suscipit harum laboriosam voluptatum,
+            architecto rem consequatur atque animi libero?
+          </div>
+          <div class="testimonials-card-info">
+            <img src="./img/man.png" class="testimonials-card-info-img " alt="">
+            <h3 class="text-center">Dainel</h3>
+            <p class="text-center">LaDeSai Corp</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonials-card">
+          <div class="testimonials-card-text ">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde fugiat suscipit harum laboriosam voluptatum,
+            architecto rem consequatur atque animi libero? dolor sit amet consectetur adipisicing elit. Unde fugiat
+            suscipit harum laboriosam voluptatum,
+            architecto rem consequatur atque animi libero?
+          </div>
+          <div class="testimonials-card-info">
+            <img src="./img/girl.png" class="testimonials-card-info-img " alt="">
+            <h3 class="text-center">Zebra</h3>
+            <p class="text-center">LaDeSai ZOO Corp</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="testimonials-card">
+          <div class="testimonials-card-text ">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde fugiat suscipit harum laboriosam voluptatum,
+            architecto rem consequatur atque animi libero? dolor sit amet consectetur adipisicing elit. Unde fugiat
+            suscipit harum laboriosam voluptatum,
+            architecto rem consequatur atque animi libero?
+          </div>
+          <div class="testimonials-card-info">
+            <img src="./img/boy.png" class="testimonials-card-info-img " alt="">
+            <h3 class="text-center">Carrie Liu</h3>
+            <p class="text-center">LaDeSai Corp</p>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </section>
-  <div class=" rooms " >
-      <div class="room-item col-md-3 col-sm-6" ><img src="./img/rooms-1.jpg"  class="img-responsive" alt=""></div> 
-      <div class="room-item col-md-3 col-sm-6"><img src="./img/rooms-2.jpg"  class="img-responsive" alt=""></div>
-      <div class="room-item col-md-3 col-sm-6"><img src="./img/rooms-3.jpg"  class="img-responsive" alt=""></div>
-      <div class="room-item col-md-3 col-sm-6"><img src="./img/rooms-4.jpg"  class="img-responsive" alt=""></div>
-      <div class="room-item col-md-3 col-sm-6" ><img src="./img/rooms-5.jpg"  class="img-responsive" alt=""></div> 
-      <div class="room-item col-md-3 col-sm-6"><img src="./img/rooms-6.jpg"  class="img-responsive" alt=""></div>
-      <div class="room-item col-md-3 col-sm-6"><img src="./img/rooms-7.jpg"  class="img-responsive" alt=""></div>
-      <div class="room-item col-md-3 col-sm-6"><img src="./img/rooms-8.jpg"  class="img-responsive" alt=""></div>
+  <!-- client -->
+  <section class="pb-90" id="Clients">
+    <div class="container ">
+      <img src="./img/client-1.png" alt="client-1" class="col-md-3 col-sm-6 col-xs-12">
+      <img src="./img/client-2.png" alt="client-1" class="col-md-3 col-sm-6 col-xs-12">
+      <img src="./img/client-3.png" alt="client-1" class="col-md-3 col-sm-6 col-xs-12">
+      <img src="./img/client-4.png" alt="client-1" class="col-md-3 col-sm-6 col-xs-12">
 
-  </div>  
-  </body>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="Contact" class="pb-90">
+    <div class="container text-center ">
+      <h2 class="text-center mb-30 ">Contact Us</h2>
+      <div class="clearfix"></div>
+      <!-- col-md-6 -->
+      <div class="col-md-6  mb-30">
+        <div class="google-maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29605.050166233454!2d120.77153733576701!3d21.948722377699188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf7179fa8495df57f!2z5aK-5LiB5ZyL5a625YWs5ZyS!5e0!3m2!1szh-TW!2stw!4v1568780061966!5m2!1szh-TW!2stw"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </div>
+      <!-- col-md-6 -->
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="Name1" class="pull-left">Name</label>
+            <input type="name" class="form-control" id="name1" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="InputEmail1" class="pull-left">Email address</label>
+            <input type="email" class="form-control" id="InputEmail1" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="name" class="pull-left">Message</label>
+            <textarea class="form-control" rows="8" placeholder="Enter Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+      </div>
+  </section>
+  <div class="clearfix"></div>
+  <!-- footer -->
+  <footer class="pb-60 pt-90">
+    <div class="foot-menu text-center " id="footer-menu">
+      <ul class="footer-list ">
+        <li><a href="#About">About Us</a></li>
+        <li><a href="#Rooms">Rooms</a></li>
+        <li><a href="#Testimonials">Testimonials</a></li>
+        <li><a href="#Clients">Clients</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+      <img src="./img/footer-logo.png" alt="footer-logos" class="footer-logos ">
+    </div>
+    <div class="clearfix"></div>
+
+  </footer>
+
+  <!-- copyright -->
+  <div class="copyright pb-20 pt-20 text-center">
+    <p> Copyright &c LaDeSai Corp 2019</p>
+  </div>
+  <div class="clearfix"></div>
+  <!-- scroll-up -->
+  <a href="#nav" class="scroll-up"><i class="fas fa-angle-up fa-3x"></i> </a>
+  <!-- <i class="fas fa-arrow-circle-up fa-3x"></i> -->
+  </div>
+</body>
+
 </html>

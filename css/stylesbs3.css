@@ -1,19 +1,37 @@
 .row .clearfix {
   clear: both;
 }
+
+
+body {
+  font-family: "Lato", Helvetica;
+  color: #535353;
+
+}
+
 a {
   text-decoration: none;
 }
 
 /*Utility*/
+.pt-20 {
+  padding-top: 20px;
+}
+
 .pt-30 {
   padding-top: 60px;
 }
+
 .pt-60 {
   padding-top: 60px;
 }
+
 .pt-90 {
   padding-top: 90px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
 }
 
 .pb-30 {
@@ -28,9 +46,37 @@ a {
   padding-bottom: 90px;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+/*HTML Element*/
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  display: inline-block;
+  position: relative;
+
+}
+
+h2::before {
+  content: '';
+  width: 28px;
+  height: 4px;
+  background: #2980b9;
+  position: absolute;
+  left: 0;
+  top: 40px;
+
+}
+
 /* nav */
 .logo {
   height: 60px;
+}
+
+.nav li {
+  font-size: 18px;
 }
 
 /* header */
@@ -51,9 +97,152 @@ header {
   top: 65%;
 }
 
+/*about us */
+.about-text {
+  line-height: 1.8;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 18px;
+}
+
 /*rooms*/
-.room-item {
-  padding-left: 0;
-  padding-right: 0;
+
+
+.room-type {
+  padding: 0;
+  margin: 0;
   overflow: hidden;
+
+}
+
+.room-photo {
+  /* padding: 0; */
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  transition: all .6s;
+}
+
+.room-photo:hover {
+  transform: scale(1.1);
+}
+
+
+/* testimonials-card */
+
+.testimonials-card {
+
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.testimonials-card-text {
+  background-color: #fff;
+  color: gray;
+  font-size: 18px;
+  line-height: 1.8;
+  padding: 60px 20px 60px;
+
+}
+
+.testimonials-card-info {
+  background-color: #29787c;
+  color: #fff;
+  padding: 30px 0 30px;
+  position: relative;
+
+}
+
+.testimonials-card-info-img {
+
+  width: 60px;
+  height: 60px;
+  border: 3px solid #7bbff0;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/* contact  */
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+/* footer */
+footer {
+  background-color: #032e4d;
+
+}
+
+.footer-list {
+  list-style: none;
+
+
+}
+
+.footer-list li {
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.footer-list :last-of-type {
+  margin-right: 0px;
+}
+
+.footer-list a {
+  text-decoration: none;
+}
+
+.footer-logos {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+/* copyright */
+.copyright {
+  background-color: #031e31;
+  color: #7bbff0;
+  font-weight: 300;
+}
+
+/*scroll-up*/
+.scroll-up {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-color: #043664;
+  color: #7bbff0;
+  border-radius: 50%;
+  right: 30px;
+  bottom: 20px;
+}
+
+.scroll-up i {
+  position: relative;
+  top: 8%;
+  right: -25%;
+
 }

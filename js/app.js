@@ -5,14 +5,11 @@ $().ready(function () {
     var navMenu = $('.nav-barmenu')
     var navContainer = $('.nav-container')
     // 原始寫法
-    // navMenu.click(function () {
-    //     navContainer.toggleClass("nav-show-menu")
-    // })
-
-    //改為mouserover
-    navMenu.on('mouseover', (function () {
+    navMenu.click(function () {
         navContainer.toggleClass("nav-show-menu")
-    }))
+    })
+
+
     // $(".nav-barmenu").click(function () {
     //     console.log('you click btn !!!');
 
